@@ -5,10 +5,10 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define CANARY 0
+#define NAV 2
 
 #define NUFU 1
-#define SYM 2
-#define NAV 3
+#define SYM 3
 #define MED 4
 #define POI 5
 #define SCR 6
@@ -81,6 +81,16 @@
             >;
         };
 
+        Navigation {
+            label = "Navigation";
+            bindings = <
+                &kp ESC     &to QWERTY &to CANARY &to_rus     &to_eng      &kp HOME   &kp PG_DN         &kp UP             &kp BKSP   &kp DEL
+                &sk LGUI    &sk LALT   &sk LCTRL  &sk LSHFT   &kp TAB      &kp LEFT   &kp LEFT          &kp DOWN           &kp RIGHT  &kp ENTER
+                &kp LC(B)   &kp N1     &kp N2     &key_repeat &kp BSLH     &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans
+                                       &trans     &kp SPACE   &trans       &trans     &kp RSHFT
+            >;
+        };
+
         Symbol {
             label = "Symbol";
             bindings = <
@@ -88,16 +98,6 @@
               &kp MINUS &kp DLLR  &kp PRCNT  &kp CARET &kp EQUAL       &trans &kp LPAR  &kp RPAR  &kp DQT &kp APOS
               &kp UNDER &kp EXCL  &kp AT     &kp HASH  &kp GRAVE       &trans &kp LBKT  &kp RBKT  &trans  &kp BSLH
                                   &trans     &trans    &trans          &trans &trans
-            >;
-        };
-
-        Navigation {
-            label = "Navigation";
-            bindings = <
-                         &trans  &trans  &trans  &trans  &trans         &trans    &trans         &kp TAB      &trans    &kp DELETE
-                         &trans  &trans  &trans  &trans  &trans         &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT &kp BACKSPACE
-                         &trans  &trans  &trans  &trans  &trans         &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END   &kp INS
-                                         &trans  &trans  &trans         &trans    &trans
             >;
         };
 
