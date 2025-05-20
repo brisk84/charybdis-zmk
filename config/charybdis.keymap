@@ -5,10 +5,10 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define CANARY 0
+#define QWERTY 1
 #define NAV 2
+#define NUM 3
 
-#define NUFU 1
-#define SYM 3
 #define MED 4
 #define POI 5
 #define SCR 6
@@ -41,10 +41,10 @@
         Qwerty {
             label = "Qwerty";
             bindings = <
-                &trans  &kp F7  &kp F8  &kp F9 &kp F12        &trans  &kp N7  &kp N8  &kp N9  &kp DELETE
-                &trans  &kp F4  &kp F5  &kp F6 &kp F11        &trans  &kp N4  &kp N5  &kp N6  &kp BACKSPACE
-                &trans  &kp F1  &kp F2  &kp F3 &kp F10        &trans  &kp N1  &kp N2  &kp N3  &trans
-                                &trans  &trans  &trans        &trans &kp N0 
+                &kp Q         &kp W        &kp E           &kp R       &kp T          &kp Y        &kp U       &kp I           &kp O        &kp P
+                &kp A         &kp S        &kp D           &kp F       &kp G          &kp H        &kp J       &kp K           &kp L        &kp SQT
+                &kp Z         &kp X        &kp C           &kp V       &kp B          &kp N        &kp M       &kp COMMA       &kp DOT      &kp FSLH
+                                               &trans      &kp SPACE   &mo NAV        &mo NUM      &kp RSHFT
             >;
         };
 
@@ -58,13 +58,13 @@
             >;
         };
 
-        Symbol {
-            label = "Symbol";
+        Numbers {
+            label = "Numbers";
             bindings = <
-              &kp TILDE &kp AMPS  &kp STAR   &trans    &kp PLUS        &trans &kp LBRC  &kp RBRC  &trans  &kp PIPE
-              &kp MINUS &kp DLLR  &kp PRCNT  &kp CARET &kp EQUAL       &trans &kp LPAR  &kp RPAR  &kp DQT &kp APOS
-              &kp UNDER &kp EXCL  &kp AT     &kp HASH  &kp GRAVE       &trans &kp LBKT  &kp RBKT  &trans  &kp BSLH
-                                  &trans     &trans    &trans          &trans &trans
+                &kp LBKT   &kp GRAVE  &kp LPAR   &kp RPAR    &kp RBKT     &kp HOME   &kp N7    &kp N8  &kp N9  &kp N0
+                &kp SEMI   &kp EXCL   &kp COLON  &kp EQUAL   &kp MINUS    &kp PLUS   &kp N4    &kp N5  &kp N6  &kp COMMA
+                &trans     &kp F1     &kp F2     &kp F2      &kp UNDER    &kp UNDER  &kp N1    &kp N2  &kp N3  &kp DOT
+                                       &trans    &kp SPACE   &trans       &trans     &kp RSHFT
             >;
         };
 
