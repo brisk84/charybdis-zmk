@@ -26,6 +26,34 @@
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };
 
+    macros {
+        to_eng: to_eng {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp SPACE>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &to CANARY>
+                ;
+        };
+
+        to_rus: to_rus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp SPACE>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp LGUI>
+                , <&macro_tap &to QWERTY>
+                ;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
         Canary {
