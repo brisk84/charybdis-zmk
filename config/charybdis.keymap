@@ -34,12 +34,12 @@
               &kp       W  &kp       L  &kp        Y  &kp        P  &kp B        &kp Z  &kp        F  &kp        O  &kp       U  &kp       SQT  
               &kp       R  &kp       R  &kp        S  &kp        T  &kp G        &kp M  &kp        N  &kp        E  &kp       I  &kp       A     
               &lt   POI Q  &kp       J  &kp        V  &kp        D  &kp K        &kp X  &kp        H  &kp SLASH     &kp    COMMA &lt POI DOT 
-                                        &lt MED ESC  &kp SPACE  &sl NUFU         &sl NumFu    &kp RSHIFT
+                                        &lt MED ESC  &kp SPACE  &sl NUFU         &mo SYM     &kp RSHIFT
             >;
         };
 
-        NuFu {
-            label = "Numeral/Function";
+        Qwerty {
+            label = "Qwerty";
             bindings = <
                 &trans  &kp F7  &kp F8  &kp F9 &kp F12        &trans  &kp N7  &kp N8  &kp N9  &kp DELETE
                 &trans  &kp F4  &kp F5  &kp F6 &kp F11        &trans  &kp N4  &kp N5  &kp N6  &kp BACKSPACE
