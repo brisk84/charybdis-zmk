@@ -72,8 +72,8 @@
             bindings = <
                 &kp Q         &kp W        &kp E           &kp R       &kp T          &kp Y        &kp U       &kp I           &kp O        &kp P
                 &kp A         &kp S        &kp D           &kp F       &kp G          &kp H        &kp J       &kp K           &kp L        &kp SQT
-                &kp Z         &kp X        &kp C           &kp V       &kp B          &kp N        &kp M       &kp COMMA       &kp DOT      &kp FSLH
-                                               &trans      &kp SPACE   &mo NAV        &mo NUM      &kp RSHFT
+                &lt POI Z     &kp X        &kp C           &kp V       &kp B          &kp N        &kp M       &kp COMMA       &kp DOT      &lt POI FSLH
+                                               &mo MED     &kp SPACE   &mo NAV        &mo NUM      &kp RSHFT
             >;
         };
 
