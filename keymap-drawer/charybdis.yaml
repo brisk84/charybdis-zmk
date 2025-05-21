@@ -140,7 +140,7 @@ layers:
   - '3'
   - .
   - {t: ▽, type: trans}
-  - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
   - {type: held}
   - $$mdi:apple-keyboard-shift$$
@@ -149,8 +149,8 @@ layers:
   - {t: ▽, type: trans}
   - $$mdi:bluetooth-off$$
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&bootloader'
+  - '&bootloader'
   - {t: ▽, type: trans}
   - $$mdi:bluetooth-off$$
   - {t: ▽, type: trans}
