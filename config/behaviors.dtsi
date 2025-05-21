@@ -1,0 +1,9 @@
+/ {
+    behaviors {
+        td_cursor: td_scroll_or_cursor {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&lt 6 ESC>, <&mo 7>; // hold, tap, double_tap
+        };
+    };
+};
