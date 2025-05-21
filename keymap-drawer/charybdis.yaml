@@ -31,7 +31,7 @@ layers:
   - /
   - ','
   - {t: ., h: Pointer}
-  - {t: '$$mdi:keyboard-esc$$', h: Media}
+  - '&td_cursor'
   - $$mdi:keyboard-space$$
   - Navigation
   - Numbers
@@ -175,7 +175,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - PLAY PAUSE
   - STOP
   - STOP
