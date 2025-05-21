@@ -57,7 +57,7 @@ layers:
   - K
   - L
   - ''''
-  - Z
+  - {t: Z, h: Pointer}
   - X
   - C
   - V
@@ -66,8 +66,8 @@ layers:
   - M
   - ','
   - .
-  - /
-  - {t: ▽, type: trans}
+  - {t: /, h: Pointer}
+  - Media
   - $$mdi:keyboard-space$$
   - Navigation
   - Numbers
