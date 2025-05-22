@@ -113,7 +113,7 @@
               &trans       &trans       &trans        &trans        &trans               &trans &trans        &trans        &trans       &trans
               &kp LGUI     &kp LALT     &kp LCTRL     &kp LSHFT     &trans               &trans &kp RSHFT     &kp RCTRL     &kp RALT     &kp RGUI
               &trans       &mo SCR      &mo SNI       &trans        &trans               &trans &trans        &tog SNI      &tog SCR     &trans
-                                            &mkp RCLK  &mkp LCLK  &mkp MCLK         &mkp MCLK  &mkp LCLK
+                                        &mkp RCLK     &mkp LCLK     &mkp MCLK            &mkp RCLK  &mkp LCLK
             >;
         };
 
