@@ -93,7 +93,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - Ctl+B
+  - '`'
   - '1'
   - '2'
   - '&key_repeat'
