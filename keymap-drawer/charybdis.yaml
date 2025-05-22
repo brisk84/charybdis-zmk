@@ -214,7 +214,7 @@ layers:
   - '&mkp RCLK'
   - '&mkp LCLK'
   - '&mkp MCLK'
-  - '&mkp MCLK'
+  - '&mkp RCLK'
   - '&mkp LCLK'
   Scroll:
   - {t: ▽, type: trans}
