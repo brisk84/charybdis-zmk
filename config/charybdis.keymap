@@ -14,6 +14,7 @@
 #define POI 5
 #define SCR 6
 #define SNI 7
+#define FUNC 8
 
 &sl {
   release-after-ms = <250>;
@@ -54,6 +55,16 @@
                 ;
         };
     };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        tri_layer {
+            if-layers = <NAV NUM>;
+            then-layer = <FUNC>;
+        };
+    };
+
 
     keymap {
         compatible = "zmk,keymap";
@@ -134,6 +145,16 @@
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                                 &trans  &trans  &trans    &trans  &trans
+            >;
+        };
+
+        Function {
+            label = "Function";
+            bindings = <
+                &trans  &kp AMPS      &kp STAR   &kp LPAR   &kp RPAR        &bt BT_SEL 0   &kp F7  &kp F8  &kp F9      &kp F10
+                &bt BT_CLR  &kp DLLR  &kp PRCNT  &kp CARET  &bootloader     &bt BT_SEL 1   &kp F4  &kp F5  &kp F6      &trans
+                &trans  &kp EXCL      &kp AT     &kp HASH   &sys_reset      &bt BT_SEL 2   &kp F1  &kp F2  &kp F3      &trans    
+                                      &trans     &trans     &trans          &trans       &trans
             >;
         };
     };
