@@ -288,3 +288,39 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  Function:
+  - {t: ▽, type: trans}
+  - '&'
+  - '*'
+  - (
+  - )
+  - {t: '$$mdi:bluetooth-connect$$', h: '0'}
+  - F7
+  - F8
+  - F9
+  - F10
+  - BT CLR
+  - $
+  - '%'
+  - ^
+  - '&bootloader'
+  - {t: '$$mdi:bluetooth-connect$$', h: '1'}
+  - F4
+  - F5
+  - F6
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - '&sys_reset'
+  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
+  - F1
+  - F2
+  - F3
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
+  - {t: ▽, type: trans}
