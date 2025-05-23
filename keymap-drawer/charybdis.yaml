@@ -308,7 +308,7 @@ layers:
   - F4
   - F5
   - F6
-  - {t: ▽, type: trans}
+  - F11
   - {t: ▽, type: trans}
   - '!'
   - '@'
@@ -318,7 +318,7 @@ layers:
   - F1
   - F2
   - F3
-  - {t: ▽, type: trans}
+  - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
