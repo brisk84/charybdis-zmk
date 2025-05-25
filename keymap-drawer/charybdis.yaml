@@ -211,9 +211,9 @@ layers:
   - {t: Sniper, h: toggle}
   - {t: Scroll, h: toggle}
   - {t: ▽, type: trans}
-  - '&mkp RCLK'
-  - '&mkp LCLK'
   - '&mkp MCLK'
+  - '&mkp LCLK'
+  - '&mkp RCLK'
   - '&mkp RCLK'
   - '&mkp LCLK'
   Scroll:
