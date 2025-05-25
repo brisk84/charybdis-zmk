@@ -314,7 +314,7 @@ layers:
   - '@'
   - '#'
   - '&sys_reset'
-  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
+  - BT CLR
   - F1
   - F2
   - F3
