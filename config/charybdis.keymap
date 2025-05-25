@@ -153,7 +153,7 @@
             bindings = <
                 &trans  &kp AMPS      &kp STAR   &kp LPAR   &kp RPAR        &bt BT_SEL 0   &kp F7  &kp F8  &kp F9      &kp F10
                 &bt BT_CLR  &kp DLLR  &kp PRCNT  &kp CARET  &bootloader     &bt BT_SEL 1   &kp F4  &kp F5  &kp F6      &kp F11
-                &trans  &kp EXCL      &kp AT     &kp HASH   &sys_reset      &bt BT_SEL 2   &kp F1  &kp F2  &kp F3      &kp F12
+                &trans  &kp EXCL      &kp AT     &kp HASH   &sys_reset      &bt BT_CLR     &kp F1  &kp F2  &kp F3      &kp F12
                                       &trans     &trans     &trans          &trans       &trans
             >;
         };
