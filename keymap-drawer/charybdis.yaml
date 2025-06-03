@@ -169,8 +169,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&sys_reset'
+  - '&sys_reset'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -290,30 +290,30 @@ layers:
   - {t: ▽, type: trans}
   Function:
   - {t: ▽, type: trans}
-  - '&'
-  - '*'
-  - (
-  - )
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: '$$mdi:bluetooth-connect$$', h: '0'}
   - F7
   - F8
   - F9
   - F10
-  - BT CLR
-  - $
-  - '%'
-  - ^
-  - '&bootloader'
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
+  - {t: ▽, type: trans}
   - {t: '$$mdi:bluetooth-connect$$', h: '1'}
   - F4
   - F5
   - F6
   - F11
   - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - '&sys_reset'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - BT CLR
   - F1
   - F2
