@@ -111,20 +111,20 @@
         Media {
             label = "Media";
             bindings = <
-              &trans     &trans        &bt BT_CLR_ALL &trans       &bootloader       &bootloader &trans        &bt BT_CLR_ALL  &trans        &trans
-              &kp C_PREV &kp C_VOL_DN  &kp C_MUTE     &kp C_VOL_UP &kp C_NEXT        &kp C_PREV  &kp C_VOL_DN  &kp C_MUTE      &kp C_VOL_UP  &kp C_NEXT
-              &trans     &trans        &trans         &trans       &sys_reset        &sys_reset  &trans        &trans          &trans        &trans
-                                       &trans    &kp C_PLAY_PAUSE  &kp C_STOP        &kp C_STOP  &kp C_PLAY_PAUSE
+              &trans     &trans        &trans      &trans            &trans            &trans      &trans            &trans      &trans        &trans
+              &kp C_PREV &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP      &kp C_NEXT        &kp C_PREV  &kp C_VOL_DN      &kp C_MUTE  &kp C_VOL_UP  &kp C_NEXT
+              &trans     &trans        &trans      &trans            &trans            &trans      &trans            &trans      &trans        &trans
+                                       &trans      &kp C_PLAY_PAUSE  &kp C_STOP        &kp C_STOP  &kp C_PLAY_PAUSE
             >;
         };
 
         Pointer {
             label = "Pointer";
             bindings = <
-              &trans       &trans       &trans        &trans        &trans               &trans &trans        &trans        &trans       &trans
-              &kp LGUI     &kp LALT     &kp LCTRL     &kp LSHFT     &trans               &trans &kp RSHFT     &kp RCTRL     &kp RALT     &kp RGUI
-              &trans       &mo SCR      &mo SNI       &trans        &trans               &trans &trans        &tog SNI      &tog SCR     &trans
-                                        &mkp MCLK     &mkp LCLK     &mkp RCLK            &mkp RCLK  &mkp LCLK
+              &trans       &trans       &trans        &trans        &sys_reset           &sys_reset     &trans        &trans        &trans       &trans
+              &kp LGUI     &kp LALT     &kp LCTRL     &kp LSHFT     &bt BT_CLR_ALL       &bt BT_CLR_ALL &kp RSHFT     &kp RCTRL     &kp RALT     &kp RGUI
+              &trans       &mo SCR      &mo SNI       &trans        &bootloader          &bootloader    &trans        &tog SNI      &tog SCR     &trans
+                                        &mkp MCLK     &mkp LCLK     &mkp RCLK            &mkp RCLK      &mkp LCLK
             >;
         };
 
