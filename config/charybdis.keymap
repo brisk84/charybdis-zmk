@@ -61,7 +61,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &sl CANARY>
-                , <&macro_tap &sk LCTRL>
+                , <&macro_press &sk LCTRL>
                 ;
         };
     };
