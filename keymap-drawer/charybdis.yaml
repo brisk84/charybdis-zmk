@@ -85,7 +85,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:apple-keyboard-command$$', h: sticky}
   - {t: '$$mdi:apple-keyboard-option$$', h: sticky}
-  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
+  - '&sctrl'
   - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
   - $$mdi:keyboard-tab$$
   - $$mdi:arrow-left-bold$$
