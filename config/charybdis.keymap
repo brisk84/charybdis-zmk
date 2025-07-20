@@ -78,7 +78,6 @@
 
     keymap {
         compatible = "zmk,keymap";
-
         Canary {
             label = "Canary";
             bindings = <
