@@ -54,6 +54,15 @@
                 , <&macro_tap &to QWERTY>
                 ;
         };
+
+        sctrl: sctrl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &sl CANARY>
+                , <&macro_tap sk LCTRL>
+                ;
+        };
     };
 
     conditional_layers {
@@ -92,7 +101,7 @@
             label = "Navigation";
             bindings = <
                 &kp ESC     &to QWERTY &to CANARY &to_rus     &to_eng      &kp HOME   &kp PG_DN         &kp UP             &kp BKSP   &kp DEL
-                &sk LGUI    &sk LALT   &sk LCTRL  &sk LSHFT   &kp TAB      &kp LEFT   &kp LEFT          &kp DOWN           &kp RIGHT  &kp ENTER
+                &sk LGUI    &sk LALT   &sctrl     &sk LSHFT   &kp TAB      &kp LEFT   &kp LEFT          &kp DOWN           &kp RIGHT  &kp ENTER
                 &kp GRAVE   &kp N1     &kp N2     &key_repeat &kp BSLH     &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans
                                        &trans     &kp SPACE   &trans       &trans     &kp RSHFT
             >;
