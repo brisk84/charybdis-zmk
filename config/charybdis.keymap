@@ -18,6 +18,7 @@
 
 &sl {
   release-after-ms = <250>;
+  ignore-modifiers;
 };
 
 &mt {
