@@ -102,8 +102,8 @@
         Navigation {
             label = "Navigation";
             bindings = <
-                &trans         &trans         &kp UP         &trans         &trans           &trans         &trans         &trans         &kp BKSP       &kp DEL
-                &trans         &kp LEFT       &kp DOWN       &sk RIGHT      &trans           &trans         &sk RSHIFT     &sk RCTRL      &sk RALT       &sk RGUI
+                &kp LBKT       &kp RBKT       &kp UP         &kp BKSP       &kp DEL          &trans         &trans         &trans         &trans         &trans
+                &kp SEMI       &kp LEFT       &kp DOWN       &sk RIGHT      &kp ENTER        &trans         &sk RSHIFT     &sk RCTRL      &sk RALT       &sk RGUI
                 &trans         &trans         &trans         &trans         &trans           &trans         &trans         &trans         &trans         &trans
                                               &trans         &kp SPACE      &trans           &trans         &kp RSHFT
             >;
