@@ -73,21 +73,21 @@ layers:
   - Navigation
   - $$mdi:apple-keyboard-shift$$
   Navigation:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '['
+  - ']'
   - $$mdi:arrow-up-bold$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - BKSP
   - $$mdi:backspace-reverse-outline$$
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ;
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - {t: '$$mdi:arrow-right-bold$$', h: sticky}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: ▽, type: trans}
   - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
   - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
