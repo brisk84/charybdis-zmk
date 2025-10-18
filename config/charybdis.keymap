@@ -15,6 +15,7 @@
 #define SCR 6
 #define SNI 7
 #define FUNC 8
+#define MOUSE 9
 
 &sl {
   release-after-ms = <250>;
@@ -167,6 +168,16 @@
                 &trans         &trans         &trans         &trans         &trans           &bt BT_CLR     &kp F1         &kp F2         &kp F3         &kp F12
                                               &trans         &trans         &trans           &trans         &trans
             >;
+        };
+
+        Mouse {
+        display-name = "Mouse";
+        bindings = <
+            &trans   &trans   &trans    &trans    &trans            &trans &trans    &trans    &trans    &trans 
+            &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans            &trans &mkp MCLK &mkp MCLK &mkp RCLK &mo SCR
+            &trans   &trans   &mo 3     &mo 2     &trans            &trans &trans    &trans    &trans    &trans
+                            &mkp MCLK   &mkp LCLK &mkp RCLK         &trans &trans 
+        >;
         };
     };
 };
