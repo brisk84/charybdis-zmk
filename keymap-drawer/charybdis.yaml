@@ -73,31 +73,31 @@ layers:
   - Navigation
   - $$mdi:apple-keyboard-shift$$
   Navigation:
-  - $$mdi:keyboard-esc$$
-  - {t: Qwerty, h: toggle}
-  - {t: Canary, h: toggle}
-  - '&to_rus'
-  - '&to_eng'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:arrow-up-bold$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - BKSP
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:apple-keyboard-command$$', h: sticky}
-  - {t: '$$mdi:apple-keyboard-option$$', h: sticky}
-  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
-  - $$mdi:keyboard-tab$$
   - {t: ▽, type: trans}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - '`'
+  - {t: '$$mdi:arrow-right-bold$$', h: sticky}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&key_repeat'
-  - \
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-option$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-command$$', h: sticky}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
