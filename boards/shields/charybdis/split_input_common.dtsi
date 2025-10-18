@@ -1,6 +1,6 @@
-#include <dt-bindings/zmk/input_transform.h>
 #include <input/processors.dtsi>
 
+#define CANARY 0
 #define MOUSE 9
 
 / {
@@ -20,7 +20,7 @@
     device = <&trackball_split>;
 
     move {
-      layers = <DEF MOUSE>;
+      layers = <CANARY MOUSE>;
       input-processors = <&auto_mouse_layer MOUSE 1000>;
     };
   };
