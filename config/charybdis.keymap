@@ -18,7 +18,7 @@
 #define MOUSE 9
 
 &sl {
-  release-after-ms = <250>;
+  release-after-ms = <2000>;
   ignore-modifiers;
 };
 
@@ -62,7 +62,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &sl CANARY>
-                , <&macro_press &kp LCTRL>
+                , <&macro_tap &sk LCTRL>
                 ;
         };
     };
@@ -103,8 +103,8 @@
         Navigation {
             label = "Navigation";
             bindings = <
-                &kp ESC        &to QWERTY     &to CANARY     &to_rus        &to_eng          &trans         &trans         &kp UP         &kp BKSP       &kp DEL
-                &sk LGUI       &sk LALT       &sk LCTRL      &sk LSHFT      &kp TAB          &trans         &kp LEFT       &kp DOWN       &kp RIGHT      &kp ENTER
+                &kp ESC        &sl QWERTY     &sl CANARY     &to_rus        &to_eng          &trans         &trans         &kp UP         &kp BKSP       &kp DEL
+                &sk LGUI       &sk LALT       &sctrl         &sk LSHFT      &kp TAB          &trans         &kp LEFT       &kp DOWN       &kp RIGHT      &kp ENTER
                 &kp GRAVE      &trans         &trans         &key_repeat    &kp BSLH         &trans         &trans         &trans         &trans         &trans
                                               &trans         &kp SPACE      &trans           &trans         &kp RSHFT
             >;
