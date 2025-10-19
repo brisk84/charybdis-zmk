@@ -74,8 +74,8 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   Navigation:
   - $$mdi:keyboard-esc$$
-  - {t: Qwerty, h: sticky}
-  - {t: Canary, h: sticky}
+  - {t: Qwerty, h: toggle}
+  - {t: Canary, h: toggle}
   - '&to_rus'
   - '&to_eng'
   - {t: ▽, type: trans}
@@ -85,7 +85,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:apple-keyboard-command$$', h: sticky}
   - {t: '$$mdi:apple-keyboard-option$$', h: sticky}
-  - '&sctrl'
+  - {t: CTRL, h: sticky}
   - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
   - $$mdi:keyboard-tab$$
   - {t: ▽, type: trans}
