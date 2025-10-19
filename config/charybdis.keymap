@@ -61,7 +61,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &sl CANARY>
+                = <&macro_tap &sl QWERTY>
                 , <&macro_tap &sk LCTRL>
                 ;
         };
