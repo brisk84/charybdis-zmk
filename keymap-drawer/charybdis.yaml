@@ -1,41 +1,5 @@
 layout: {zmk_keyboard: charybdis, layout_name: five_column_transform}
 layers:
-  Canary:
-  - W
-  - L
-  - Y
-  - P
-  - B
-  - Z
-  - F
-  - O
-  - U
-  - ''''
-  - C
-  - R
-  - S
-  - T
-  - G
-  - M
-  - N
-  - E
-  - I
-  - A
-  - {t: Q, h: Pointer}
-  - J
-  - V
-  - D
-  - K
-  - X
-  - H
-  - /
-  - ','
-  - {t: ., h: Pointer}
-  - Media
-  - $$mdi:keyboard-space$$
-  - Navigation
-  - Numbers
-  - $$mdi:apple-keyboard-shift$$
   Qwerty:
   - Q
   - W
@@ -67,6 +31,42 @@ layers:
   - ','
   - .
   - {t: /, h: Pointer}
+  - Media
+  - $$mdi:keyboard-space$$
+  - Navigation
+  - Numbers
+  - $$mdi:apple-keyboard-shift$$
+  Canary:
+  - W
+  - L
+  - Y
+  - P
+  - B
+  - Z
+  - F
+  - O
+  - U
+  - ''''
+  - C
+  - R
+  - S
+  - T
+  - G
+  - M
+  - N
+  - E
+  - I
+  - A
+  - {t: Q, h: Pointer}
+  - J
+  - V
+  - D
+  - K
+  - X
+  - H
+  - /
+  - ','
+  - {t: ., h: Pointer}
   - Media
   - $$mdi:keyboard-space$$
   - Navigation
