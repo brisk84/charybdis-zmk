@@ -30,6 +30,15 @@
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };
 
+    behaviors {
+        am: auto_mouse_layer {
+            compatible = "zmk,behavior-auto-mouse";
+            #binding-cells = <0>;
+            layer = <MOUSE>;
+            time-to-live-ms = <1000>;  // Слой активен 1 секунду после последнего движения
+        };
+    };
+
     macros {
         to_eng: to_eng {
             compatible = "zmk,behavior-macro";
