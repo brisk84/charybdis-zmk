@@ -33,7 +33,7 @@ layers:
   - {t: ., h: Pointer}
   - Media
   - $$mdi:keyboard-space$$
-  - Nav_Canary
+  - Navigation
   - Numbers
   - $$mdi:apple-keyboard-shift$$
   Qwerty:
@@ -69,10 +69,10 @@ layers:
   - {t: /, h: Pointer}
   - Media
   - $$mdi:keyboard-space$$
-  - Nav_Qwerty
+  - Navigation
   - Numbers
   - $$mdi:apple-keyboard-shift$$
-  Nav_Canary:
+  Navigation:
   - $$mdi:keyboard-esc$$
   - {t: Qwerty, h: toggle}
   - {t: Canary, h: toggle}
@@ -83,45 +83,9 @@ layers:
   - $$mdi:arrow-up-bold$$
   - BKSP
   - $$mdi:backspace-reverse-outline$$
-  - '&gui_from_can'
-  - '&alt_from_can'
-  - '&ctrl_from_can'
-  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
-  - $$mdi:keyboard-tab$$
-  - {t: ▽, type: trans}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - '`'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&key_repeat'
-  - \
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:keyboard-space$$
-  - {type: held}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-shift$$
-  Nav_Qwerty:
-  - $$mdi:keyboard-esc$$
-  - {t: Qwerty, h: toggle}
-  - {t: Canary, h: toggle}
-  - '&to_rus'
-  - '&to_eng'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:arrow-up-bold$$
-  - BKSP
-  - $$mdi:backspace-reverse-outline$$
-  - '&gui_from_qwe'
-  - '&alt_from_qwe'
-  - '&ctrl_from_qwe'
+  - {t: '$$mdi:apple-keyboard-command$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-option$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
   - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
   - $$mdi:keyboard-tab$$
   - {t: ▽, type: trans}
@@ -384,7 +348,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Numbers
-  - Nav_Canary
+  - Navigation
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
