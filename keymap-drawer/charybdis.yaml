@@ -83,9 +83,9 @@ layers:
   - $$mdi:arrow-up-bold$$
   - BKSP
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:apple-keyboard-command$$', h: sticky}
-  - {t: '$$mdi:apple-keyboard-option$$', h: sticky}
-  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
+  - '&sk_gui_can'
+  - '&sk_alt_can'
+  - '&sk_ctrl_can'
   - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
   - $$mdi:keyboard-tab$$
   - {t: ▽, type: trans}
