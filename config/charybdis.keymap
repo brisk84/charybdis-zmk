@@ -127,7 +127,7 @@
             label = "Navigation";
             bindings = <
                 &kp ESC        &to QWERTY     &to CANARY     &to_rus        &to_eng          &trans         &trans         &kp UP         &kp BKSP       &kp DEL
-                &sk_gui_can    &sk_alt_can    &sk_ctrl_can   &sk LSHFT      &kp TAB          &trans         &kp LEFT       &kp DOWN       &kp RIGHT      &kp ENTER
+                &sk LGUI       &sk LALT       &sk LCTRL      &sk LSHFT      &kp TAB          &trans         &kp LEFT       &kp DOWN       &kp RIGHT      &kp ENTER
                 &kp GRAVE      &trans         &trans         &key_repeat    &kp BSLH         &trans         &trans         &trans         &trans         &trans
                                               &trans         &kp SPACE      &trans           &trans         &kp RSHFT
             >;
