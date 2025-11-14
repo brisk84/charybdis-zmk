@@ -1,4 +1,14 @@
 / {
+    macros {
+        mo_poi: mo_poi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&mo 5>;
+        };
+    };
+
     behaviors {
         td_cursor: td_scroll_or_cursor {
             compatible = "zmk,behavior-tap-dance";
@@ -50,7 +60,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             flavor = "tap-preferred";
-            bindings = <&mo 5>, <&qw_z>;  // Hold: POI layer, Tap: Z (or Q with mods)
+            bindings = <&mo_poi>, <&qw_z>;  // Hold: POI layer, Tap: Z (or Q with mods)
         };
 
         qw_fslh_poi: qw_fslh_poi {
@@ -60,7 +70,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             flavor = "tap-preferred";
-            bindings = <&mo 5>, <&qw_fslh>;  // Hold: POI layer, Tap: FSLH (or DOT with mods)
+            bindings = <&mo_poi>, <&qw_fslh>;  // Hold: POI layer, Tap: FSLH (or DOT with mods)
         };
     };
 };
