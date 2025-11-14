@@ -37,36 +37,36 @@ layers:
   - Numbers
   - $$mdi:apple-keyboard-shift$$
   Qwerty:
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - A
-  - S
-  - D
-  - F
+  - {t: Q, s: W}
+  - {t: W, s: L}
+  - {t: E, s: Y}
+  - {t: R, s: P}
+  - {t: T, s: B}
+  - {t: Y, s: Z}
+  - {t: U, s: F}
+  - {t: I, s: O}
+  - {t: O, s: U}
+  - {t: P, s: ''''}
+  - {t: A, s: C}
+  - {t: S, s: R}
+  - {t: D, s: S}
+  - {t: F, s: T}
   - G
-  - H
-  - J
-  - K
-  - L
-  - ''''
-  - {t: Z, h: Pointer}
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - {t: /, h: Pointer}
+  - {t: H, s: M}
+  - {t: J, s: N}
+  - {t: K, s: E}
+  - {t: L, s: I}
+  - {t: '''', s: A}
+  - '&qw_z_poi'
+  - {t: X, s: J}
+  - {t: C, s: V}
+  - {t: V, s: D}
+  - {t: B, s: K}
+  - {t: N, s: X}
+  - {t: M, s: H}
+  - {t: ',', s: /}
+  - {t: ., s: ','}
+  - '&qw_fslh_poi'
   - Media
   - $$mdi:keyboard-space$$
   - Navigation
