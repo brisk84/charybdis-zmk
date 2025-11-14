@@ -1,14 +1,4 @@
 / {
-    macros {
-        mo_poi: mo_poi {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <0>;
-            bindings = <&mo 5>;
-        };
-    };
-
     behaviors {
         td_cursor: td_scroll_or_cursor {
             compatible = "zmk,behavior-tap-dance";
@@ -50,27 +40,5 @@
         qw_m: qw_m { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp M>, <&kp H>; mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>; };
         qw_comma: qw_comma { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp COMMA>, <&kp SLASH>; mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>; };
         qw_dot: qw_dot { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DOT>, <&kp COMMA>; mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>; };
-        qw_fslh: qw_fslh { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp FSLH>, <&kp DOT>; mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>; };
-
-        // Special hold-tap behaviors for corner keys in Qwerty layer
-        qw_z_poi: qw_z_poi {
-            compatible = "zmk,behavior-hold-tap";
-            label = "QW_Z_POI";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
-            flavor = "tap-preferred";
-            bindings = <&mo_poi>, <&qw_z>;  // Hold: POI layer, Tap: Z (or Q with mods)
-        };
-
-        qw_fslh_poi: qw_fslh_poi {
-            compatible = "zmk,behavior-hold-tap";
-            label = "QW_FSLH_POI";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
-            flavor = "tap-preferred";
-            bindings = <&mo_poi>, <&qw_fslh>;  // Hold: POI layer, Tap: FSLH (or DOT with mods)
-        };
     };
 };
