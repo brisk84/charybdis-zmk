@@ -66,6 +66,8 @@
         };
     };
 
+    #include "combos.dtsi"
+
     keymap {
         compatible = "zmk,keymap";
 
