@@ -125,9 +125,9 @@
             label = "Pointer";
             bindings = <
                 &trans         &trans         &trans         &trans         &sys_reset       &sys_reset     &trans         &trans         &trans         &trans
-                &kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      &bt BT_CLR_ALL   &bt BT_CLR_ALL &kp RSHFT      &kp RCTRL      &kp RALT       &kp RGUI
+                &trans         &mkp RCLK      &mkp MCLK      &mkp LCLK      &bt BT_CLR_ALL   &bt BT_CLR_ALL &mkp LCLK      &mkp MCLK      &mkp RCLK      &trans
                 &trans         &mo SCR        &mo SNI        &trans         &bootloader      &bootloader    &trans         &tog SNI       &tog SCR       &trans
-                                              &mkp MCLK      &mkp LCLK      &mkp RCLK        &mkp RCLK      &mkp LCLK
+                                              &mo MED        &kp SPACE      &mo NAV          &mo NUM        &kp RSHIFT
             >;
         };
 

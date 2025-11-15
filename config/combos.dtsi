@@ -17,13 +17,13 @@
 combos {
   compatible = "zmk,combos";
 
-  COMBO(l_leftclick, &mkp LCLK, 11 12, BASE, COMBO_TERM_SLOW)
-  COMBO(l_rightclick, &mkp RCLK, 21 22, BASE, COMBO_TERM_SLOW)
-  COMBO(l_middleclick, &mkp MCLK, 22 23, BASE, COMBO_TERM_SLOW)
+  COMBO(l_leftclick, &mkp LCLK, 16 17, BASE, COMBO_TERM_SLOW)
+  COMBO(l_rightclick, &mkp RCLK, 17 18, BASE, COMBO_TERM_SLOW)
+  COMBO(l_middleclick, &mkp MCLK, 16 18, BASE, COMBO_TERM_SLOW)
 
-  COMBO(r_leftclick, &mkp LCLK, 17 18, BASE, COMBO_TERM_SLOW)
-  COMBO(r_rightclick, &mkp RCLK, 27 28, BASE, COMBO_TERM_SLOW)
-  COMBO(r_middleclick, &mkp MCLK, 26 27, BASE, COMBO_TERM_SLOW)
+  COMBO(r_leftclick, &mkp LCLK, 12 13, BASE, COMBO_TERM_SLOW)
+  COMBO(r_rightclick, &mkp RCLK, 11 12, BASE, COMBO_TERM_SLOW)
+  COMBO(r_middleclick, &mkp MCLK, 11 13, BASE, COMBO_TERM_SLOW)
 
   COMBO(nav_bootloader, &bootloader, 23 24, 2, COMBO_TERM_BOOTLOADER)
   COMBO(num_bootloader, &bootloader, 25 26, 3, COMBO_TERM_BOOTLOADER)
