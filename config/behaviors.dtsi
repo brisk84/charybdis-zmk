@@ -38,8 +38,8 @@
         qw_b: qw_b { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp B>, <&kp K>; mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>; keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>; };
         qw_n: qw_n { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N>, <&kp X>; mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>; keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>; };
         qw_m: qw_m { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp M>, <&kp H>; mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>; keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>; };
-        qw_comma: qw_comma { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp COMMA>, <&kp SLASH>; mods = <(MOD_LGUI|MOD_RGUI|MOD_LALT|MOD_RALT)>; keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LALT|MOD_RALT)>; };
-        qw_dot: qw_dot { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DOT>, <&kp COMMA>; mods = <(MOD_LGUI|MOD_RGUI|MOD_LALT|MOD_RALT)>; keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LALT|MOD_RALT)>; };
+        qw_comma: qw_comma { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp COMMA>, <&kp SLASH>; mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>; keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>; };
+        qw_dot: qw_dot { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DOT>, <&kp COMMA>; mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>; keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>; };
         qw_fslh: qw_fslh { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp FSLH>, <&kp DOT>; mods = <(MOD_LGUI|MOD_RGUI|MOD_LALT|MOD_RALT)>; keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LALT|MOD_RALT)>; };
     };
 };
