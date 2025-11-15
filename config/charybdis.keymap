@@ -74,9 +74,9 @@
         Canary {
             label = "Canary";
             bindings = <
-                &kp W          &kp L          &kp Y          &kp P          &kp B            &kp Z          &kp F          &kp O          &kp U          &kp SQT  
-                &kp C          &kp R          &kp S          &kp T          &kp G            &kp M          &kp N          &kp E          &kp I          &kp A     
-                &lt POI Q      &kp J          &kp V          &kp D          &kp K            &kp X          &kp H          &kp SLASH      &kp COMMA      &lt POI DOT 
+                &kp W          &kp L          &kp Y          &kp P          &kp B            &kp Z          &kp F          &kp O          &kp U          &kp SQT
+                &kp C          &kp R          &kp S          &kp T          &kp G            &kp M          &kp N          &kp E          &kp I          &kp A
+                &kp Q          &kp J          &kp V          &kp D          &kp K            &kp X          &kp H          &kp SLASH      &kp COMMA      &kp DOT
                                               &mo MED        &kp SPACE      &mo NAV          &mo NUM        &kp RSHIFT
             >;
         };
@@ -86,7 +86,7 @@
             bindings = <
                 &qw_q          &qw_w          &qw_e          &qw_r          &qw_t            &qw_y          &qw_u          &qw_i          &qw_o          &qw_p
                 &qw_a          &qw_s          &qw_d          &qw_f          &kp G            &qw_h          &qw_j          &qw_k          &qw_l          &qw_sqt
-                &lt POI Z      &qw_x          &qw_c          &qw_v          &qw_b            &qw_n          &qw_m          &qw_comma      &qw_dot        &lt POI FSLH
+                &qw_z          &qw_x          &qw_c          &qw_v          &qw_b            &qw_n          &qw_m          &qw_comma      &qw_dot        &kp DOT
                                               &mo MED        &kp SPACE      &mo NAV          &mo NUM        &kp RSHFT
             >;
         };
