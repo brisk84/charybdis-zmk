@@ -14,7 +14,6 @@
 #define SCR 6
 #define SNI 7
 #define FUNC 8
-#define MOUSE 9
 
 &sl {
   release-after-ms = <2000>;
@@ -54,39 +53,6 @@
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp LGUI>
                 , <&macro_tap &to QWERTY>
-                ;
-        };
-
-        sk_gui_can: sk_gui_can {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &mo CANARY>
-                , <&macro_tap &sk LGUI>
-                , <&macro_pause_for_release>
-                , <&macro_release &mo CANARY>
-                ;
-        };
-
-        sk_alt_can: sk_alt_can {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &mo CANARY>
-                , <&macro_tap &sk LALT>
-                , <&macro_pause_for_release>
-                , <&macro_release &mo CANARY>
-                ;
-        };
-
-        sk_ctrl_can: sk_ctrl_can {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &mo CANARY>
-                , <&macro_tap &sk LCTRL>
-                , <&macro_pause_for_release>
-                , <&macro_release &mo CANARY>
                 ;
         };
     };
@@ -191,16 +157,6 @@
                 &trans         &trans         &trans         &trans         &trans           &bt BT_CLR     &kp F1         &kp F2         &kp F3         &kp F12
                                               &trans         &trans         &trans           &trans         &trans
             >;
-        };
-
-        Mouse {
-        display-name = "Mouse";
-        bindings = <
-            &trans   &trans   &trans    &trans    &trans            &trans &trans    &trans    &trans    &trans 
-            &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans            &trans &mkp MCLK &mkp MCLK &mkp RCLK &mo SCR
-            &trans   &trans   &mo 3     &mo 2     &trans            &trans &trans    &trans    &trans    &trans
-                            &mkp MCLK   &mkp LCLK &mkp RCLK         &trans &trans 
-        >;
         };
     };
 };
