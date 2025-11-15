@@ -126,7 +126,7 @@
             bindings = <
                 &trans         &trans         &trans         &trans         &sys_reset       &sys_reset     &trans         &trans         &trans         &trans
                 &trans         &mkp RCLK      &mkp MCLK      &mkp LCLK      &bt BT_CLR_ALL   &bt BT_CLR_ALL &mkp LCLK      &mkp MCLK      &mkp RCLK      &trans
-                &trans         &mo SCR        &mo SNI        &trans         &bootloader      &bootloader    &trans         &tog SNI       &tog SCR       &trans
+                &trans         &mo SCR        &mo SNI        &trans         &bootloader      &bootloader    &trans         &mo SNI        &mo SCR        &trans
                                               &mo MED        &kp SPACE      &mo NAV          &mo NUM        &kp RSHIFT
             >;
         };
