@@ -14,6 +14,7 @@
 #define SCR 6
 #define SNI 7
 #define FUNC 8
+#define NUM_RU 9
 
 &sl {
   release-after-ms = <2000>;
@@ -64,6 +65,11 @@
             if-layers = <NAV NUM>;
             then-layer = <FUNC>;
         };
+
+        tri_layer_ru {
+            if-layers = <NAV NUM_RU>;
+            then-layer = <FUNC>;
+        };
     };
 
     #include "combos.dtsi"
@@ -87,7 +93,7 @@
                 &qw_q          &qw_w          &qw_e          &qw_r          &qw_t            &qw_y          &qw_u          &qw_i          &qw_o          &qw_p
                 &qw_a          &qw_s          &qw_d          &qw_f          &kp G            &qw_h          &qw_j          &qw_k          &qw_l          &qw_sqt
                 &qw_z          &qw_x          &qw_c          &qw_v          &qw_b            &qw_n          &qw_m          &qw_comma      &qw_dot        &qw_fslh
-                                              &mo MED        &kp SPACE      &mo NAV          &mo NUM        &kp RSHFT
+                                              &mo MED        &kp SPACE      &mo NAV          &mo NUM_RU     &kp RSHFT
             >;
         };
 
@@ -105,8 +111,8 @@
             label = "Numbers";
             bindings = <
                 &kp LBKT       &kp GRAVE      &kp LPAR       &kp RPAR       &kp RBKT         &kp HOME       &kp N7         &kp N8         &kp N9         &kp N0
-                &kp SEMI       &kp EXCL       &kp COLON      &kp EQUAL      &kp MINUS        &kp PLUS       &kp N4         &kp N5         &kp N6         &kp LS(FSLH)
-                &trans         &trans         &trans         &trans         &kp UNDER        &kp UNDER      &kp N1         &kp N2         &kp N3         &kp FSLH
+                &kp SEMI       &kp EXCL       &kp COLON      &kp EQUAL      &kp MINUS        &kp PLUS       &kp N4         &kp N5         &kp N6         &kp COMMA
+                &trans         &trans         &trans         &trans         &kp UNDER        &kp UNDER      &kp N1         &kp N2         &kp N3         &kp DOT
                                               &trans         &kp RSHFT      &trans           &trans         &kp RSHFT
             >;
         };
@@ -158,6 +164,16 @@
                 &kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      &trans           &bt BT_SEL 1   &kp F4         &kp F5         &kp F6         &kp F11
                 &trans         &trans         &trans         &trans         &trans           &bt BT_CLR     &kp F1         &kp F2         &kp F3         &kp F12
                                               &trans         &trans         &trans           &trans         &trans
+            >;
+        };
+
+        Numbers_RU {
+            label = "Numbers RU";
+            bindings = <
+                &kp LBKT       &kp GRAVE      &kp LPAR       &kp RPAR       &kp RBKT         &kp HOME       &kp N7         &kp N8         &kp N9         &kp N0
+                &kp SEMI       &kp EXCL       &kp COLON      &kp EQUAL      &kp MINUS        &kp PLUS       &kp N4         &kp N5         &kp N6         &kp LS(FSLH)
+                &trans         &trans         &trans         &trans         &kp UNDER        &kp UNDER      &kp N1         &kp N2         &kp N3         &kp FSLH
+                                              &trans         &kp RSHFT      &trans           &trans         &kp RSHFT
             >;
         };
     };
