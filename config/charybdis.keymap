@@ -86,7 +86,7 @@
             bindings = <
                 &qw_q          &qw_w          &qw_e          &qw_r          &qw_t            &qw_y          &qw_u          &qw_i          &qw_o          &qw_p
                 &qw_a          &qw_s          &qw_d          &qw_f          &kp G            &qw_h          &qw_j          &qw_k          &qw_l          &qw_sqt
-                &qw_z          &qw_x          &qw_c          &qw_v          &qw_b            &qw_n          &qw_m          &qw_comma      &qw_dot        &kp DOT
+                &qw_z          &qw_x          &qw_c          &qw_v          &qw_b            &qw_n          &qw_m          &qw_comma      &qw_dot        &qw_fslh
                                               &mo MED        &kp SPACE      &mo NAV          &mo NUM        &kp RSHFT
             >;
         };
