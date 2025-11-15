@@ -35,7 +35,7 @@ layers:
   - Media
   - $$mdi:keyboard-space$$
   - Navigation
-  - Numbers
+  - Numbers RU
   - $$mdi:apple-keyboard-shift$$
   Navigation:
   - $$mdi:keyboard-esc$$
@@ -93,7 +93,7 @@ layers:
   - '4'
   - '5'
   - '6'
-  - Sft+/
+  - ','
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -103,7 +103,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - /
+  - .
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
@@ -156,7 +156,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Scroll
   - '&mkp RCLK'
   - '&mkp MCLK'
   - '&mkp LCLK'
@@ -165,16 +165,16 @@ layers:
   - '&mkp LCLK'
   - '&mkp MCLK'
   - '&mkp RCLK'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - Scroll
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Sniper
   - {t: ▽, type: trans}
   - '&bootloader'
   - '&bootloader'
   - {t: ▽, type: trans}
   - Sniper
-  - Scroll
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Media
   - $$mdi:keyboard-space$$
@@ -192,18 +192,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -286,9 +286,45 @@ layers:
   - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Numbers RU:
+  - '['
+  - '`'
+  - (
+  - )
+  - ']'
+  - HOME
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - ;
+  - '!'
+  - ':'
+  - '='
+  - '-'
+  - +
+  - '4'
+  - '5'
+  - '6'
+  - Sft+/
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - _
+  - _
+  - '1'
+  - '2'
+  - '3'
+  - /
+  - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-shift$$
+  - {t: ▽, type: trans}
+  - {type: held}
+  - $$mdi:apple-keyboard-shift$$
 combos:
 - p: [16, 17]
   k: '&mkp LCLK'
