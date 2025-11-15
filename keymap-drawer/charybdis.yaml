@@ -93,7 +93,7 @@ layers:
   - '4'
   - '5'
   - '6'
-  - ','
+  - {t: ',', s: /}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -103,7 +103,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - .
+  - {t: ., s: ','}
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
