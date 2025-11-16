@@ -102,7 +102,7 @@
             bindings = <
                 &kp ESC        &to QWERTY     &to CANARY     &to_rus        &to_eng          &trans         &trans         &kp UP         &kp BKSP       &kp DEL
                 &sk LGUI       &sk LALT       &sk LCTRL      &sk LSHFT      &kp TAB          &trans         &kp LEFT       &kp DOWN       &kp RIGHT      &kp ENTER
-                &kp GRAVE      &trans         &trans         &key_repeat    &kp BSLH         &trans         &kp HOME       &kp PG_UP      &kp PG_DOWN    &kp END
+                &kp GRAVE      &trans         &trans         &key_repeat    &kp BSLH         &trans         &kp HOME       &kp PG_UP      &kp PG_DN      &kp END
                                               &trans         &kp LSHIFT     &trans           &trans         &kp SPACE
             >;
         };
