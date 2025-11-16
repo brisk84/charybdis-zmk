@@ -1,5 +1,11 @@
 CLAUDE.md
 
 # Local ZMK build
+.west/
 zmk/
+zmk-pmw3610-driver/
+modules/
+tools/
+zephyr/
+bootloader/
 build/
