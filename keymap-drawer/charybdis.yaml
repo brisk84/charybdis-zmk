@@ -1,6 +1,7 @@
 layout: {zmk_keyboard: charybdis, layout_name: five_column_transform}
 layers:
-  Canary: [W, L, Y, P, B, Z, F, O, U, '''', C, R, S, T, G, M, N, E, I, A, Q, J, V, D, K, X, H, /, ',', ., Media, '$$mdi:keyboard-space$$', Navigation, Numbers, '$$mdi:apple-keyboard-shift$$']
+  Canary: [W, L, Y, P, B, Z, F, O, U, '''', C, R, S, T, G, M, N, E, I, A, Q, J, V, D, K, X, H, /, ',', ., Media, '$$mdi:apple-keyboard-shift$$', Navigation, Numbers,
+    '$$mdi:keyboard-space$$']
   Qwerty:
   - {t: Q, s: W}
   - {t: W, s: L}
@@ -33,10 +34,10 @@ layers:
   - {t: ., s: ','}
   - {t: /, s: .}
   - Media
-  - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-shift$$
   - Navigation
   - Numbers RU
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:keyboard-space$$
   Navigation:
   - $$mdi:keyboard-esc$$
   - {t: Qwerty, h: toggle}
@@ -69,10 +70,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-shift$$
   - {type: held}
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:keyboard-space$$
   Numbers:
   - '['
   - '`'
@@ -108,7 +109,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
   - {type: held}
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:keyboard-space$$
   Media:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -177,10 +178,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Media
-  - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-shift$$
   - Navigation
   - Numbers
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:keyboard-space$$
   Scroll:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -324,7 +325,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
   - {type: held}
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:keyboard-space$$
 combos:
 - p: [16, 17]
   k: '&mkp LCLK'
