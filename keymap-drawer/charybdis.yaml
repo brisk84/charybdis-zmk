@@ -65,10 +65,10 @@ layers:
   - '&key_repeat'
   - \
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - HOME
+  - PG UP
+  - PG DOWN
+  - END
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-shift$$
   - {type: held}
@@ -80,7 +80,7 @@ layers:
   - (
   - )
   - ']'
-  - HOME
+  - {t: ▽, type: trans}
   - '7'
   - '8'
   - '9'
@@ -296,7 +296,7 @@ layers:
   - (
   - )
   - ']'
-  - HOME
+  - {t: ▽, type: trans}
   - '7'
   - '8'
   - '9'
