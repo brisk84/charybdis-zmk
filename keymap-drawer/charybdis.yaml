@@ -151,8 +151,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&sys_reset'
-  - '&sys_reset'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -161,8 +161,8 @@ layers:
   - '&mkp RCLK'
   - '&mkp MCLK'
   - '&mkp LCLK'
-  - $$mdi:bluetooth-off$$
-  - $$mdi:bluetooth-off$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&mkp LCLK'
   - '&mkp MCLK'
   - '&mkp RCLK'
@@ -171,8 +171,8 @@ layers:
   - {t: ▽, type: trans}
   - Sniper
   - {t: ▽, type: trans}
-  - '&bootloader'
-  - '&bootloader'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Sniper
   - {t: ▽, type: trans}
