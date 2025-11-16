@@ -67,7 +67,7 @@ layers:
   - {t: ▽, type: trans}
   - HOME
   - PG UP
-  - PG DOWN
+  - PG DN
   - END
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-shift$$
