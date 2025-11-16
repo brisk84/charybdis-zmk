@@ -130,9 +130,9 @@
         Pointer {
             label = "Pointer";
             bindings = <
-                &trans         &trans         &trans         &trans         &sys_reset       &sys_reset     &trans         &trans         &trans         &trans
-                &mo SCR        &mkp RCLK      &mkp MCLK      &mkp LCLK      &bt BT_CLR_ALL   &bt BT_CLR_ALL &mkp LCLK      &mkp MCLK      &mkp RCLK      &mo SCR
-                &trans         &trans         &mo SNI        &trans         &bootloader      &bootloader    &trans         &mo SNI        &trans         &trans
+                &trans         &trans         &trans         &trans         &trans           &trans         &trans         &trans         &trans         &trans
+                &mo SCR        &mkp RCLK      &mkp MCLK      &mkp LCLK      &trans           &trans         &mkp LCLK      &mkp MCLK      &mkp RCLK      &mo SCR
+                &trans         &trans         &mo SNI        &trans         &trans           &trans         &trans         &mo SNI        &trans         &trans
                                               &mo MED        &kp LSHIFT     &mo NAV          &mo NUM        &kp SPACE
             >;
         };
