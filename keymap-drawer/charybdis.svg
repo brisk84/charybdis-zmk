@@ -845,6 +845,10 @@ path.combo {
 <text x="504" y="147" class="combo tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
 </g>
 <g class="combo combopos-1">
+<rect rx="6" ry="6" x="490" y="78" width="28" height="26" class="combo"/>
+<use href="#mdi:bluetooth-off" xlink:href="#mdi:bluetooth-off" x="497" y="84" height="14" width="14.0" class="combo tap glyph mdi:bluetooth-off"/>
+</g>
+<g class="combo combopos-2">
 <rect rx="6" ry="6" x="490" y="22" width="28" height="26" class="combo"/>
 <text x="504" y="35" class="combo tap"><tspan style="font-size: 70%">&amp;sys_reset</tspan></text>
 </g>

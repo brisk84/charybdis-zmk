@@ -351,6 +351,9 @@ combos:
 - p: [25, 26]
   k: '&bootloader'
   l: [Numbers]
+- p: [15, 16]
+  k: $$mdi:bluetooth-off$$
+  l: [Numbers]
 - p: [3, 4]
   k: '&sys_reset'
   l: [Navigation]
