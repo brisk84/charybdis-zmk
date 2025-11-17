@@ -279,7 +279,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - $$mdi:bluetooth-off$$
   - BT CLR
   - F1
   - F2
