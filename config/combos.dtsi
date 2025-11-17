@@ -28,6 +28,8 @@ combos {
   COMBO(nav_bootloader, &bootloader, 23 24, 2, COMBO_TERM_BOOTLOADER)
   COMBO(num_bootloader, &bootloader, 25 26, 3, COMBO_TERM_BOOTLOADER)
 
+  COMBO(num_bt_clear_all, &bt BT_CLR_ALL, 15 16, 3, COMBO_TERM_BOOTLOADER)
+
   COMBO(nav_sysreset, &sys_reset, 3 4, 2, COMBO_TERM_BOOTLOADER)
   COMBO(num_sysreset, &sys_reset, 5 6, 3, COMBO_TERM_BOOTLOADER)
 };
