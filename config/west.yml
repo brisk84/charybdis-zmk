@@ -2,10 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/petejohanson
+    - name: brisk84
+      url-base: https://github.com/brisk84
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: feat/pointers-move-scroll
       import: app/west.yml
+    - name: zmk-pmw3610-driver
+      remote: brisk84
+      revision: main
   self:
     path: config
