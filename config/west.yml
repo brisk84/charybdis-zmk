@@ -10,7 +10,6 @@ manifest:
       revision: feat/pointers-move-scroll
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: inorichi
-      revision: main
+      path: modules/zmk-pmw3610-driver
   self:
     path: config
