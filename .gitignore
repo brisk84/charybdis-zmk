@@ -4,10 +4,9 @@ CLAUDE.md
 .west/
 zmk/
 zmk-pmw3610-driver/
-modules/*
-!modules/zmk-pmw3610-driver/
+modules/
 tools/
-zephyr/
-!modules/zmk-pmw3610-driver/zephyr/
+/zephyr/
+!custom-pmw3610-driver/
 bootloader/
 build/
