@@ -11,6 +11,6 @@ manifest:
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: brisk84
-      revision: 3851fe11018c79ff11e4177b4345259a85db866e
+      revision: 6e26ff7209be456696c8f69d7ad3d5b495746fa2
   self:
     path: config
