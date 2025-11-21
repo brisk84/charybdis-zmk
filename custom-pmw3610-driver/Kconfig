@@ -159,6 +159,13 @@ config PMW3610_AUTOMOUSE_TIMEOUT_MS
   int "Amount of milliseconds the mouse layer will be active after using the trackball"
   default 400
 
+config PMW3610_AUTOMOUSE_KEYPRESS_DELAY_MS
+  int "Delay in milliseconds after any keypress before automouse can activate"
+  default 400
+  help
+    Prevents automouse layer activation for this many milliseconds after any key is pressed.
+    This helps avoid accidental trackball activation while typing.
+
 module = PMW3610
 module-str = PMW3610
 source "${ZEPHYR_BASE}/subsys/logging/Kconfig.template.log_config"

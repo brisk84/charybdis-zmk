@@ -15,6 +15,7 @@
 #include <zephyr/input/input.h>
 #include <zmk/keymap.h>
 #include <zmk/events/layer_state_changed.h>
+#include <zmk/events/keycode_state_changed.h>
 #include "pmw3610.h"
 
 #include <zephyr/logging/log.h>
@@ -548,6 +549,7 @@ static void pmw3610_async_init(struct k_work *work) {
 struct k_timer automouse_layer_timer;
 static bool automouse_triggered = false;
 static const struct device *pmw3610_dev = NULL;
+static int64_t last_keypress_time = 0;
 
 static bool is_layer_ignored(uint8_t layer) {
     if (pmw3610_dev == NULL) {
@@ -562,11 +564,33 @@ static bool is_layer_ignored(uint8_t layer) {
     return false;
 }
 
+static bool is_any_ignored_layer_active() {
+    if (pmw3610_dev == NULL) {
+        return false;
+    }
+    const struct pixart_config *config = pmw3610_dev->config;
+
+    // Check all ignored layers to see if any are currently active
+    for (size_t i = 0; i < config->automouse_ignored_layers_len; i++) {
+        if (zmk_keymap_layer_active(config->automouse_ignored_layers[i])) {
+            return true;
+        }
+    }
+    return false;
+}
+
 static void activate_automouse_layer() {
-    uint8_t highest_layer = zmk_keymap_highest_layer_active();
-    if (is_layer_ignored(highest_layer)) {
+    // Don't activate if any ignored layer is active
+    if (is_any_ignored_layer_active()) {
         return;
     }
+
+    // Check if enough time has passed since last keypress
+    int64_t current_time = k_uptime_get();
+    if (current_time - last_keypress_time < CONFIG_PMW3610_AUTOMOUSE_KEYPRESS_DELAY_MS) {
+        return;
+    }
+
     automouse_triggered = true;
     zmk_keymap_layer_activate(AUTOMOUSE_LAYER);
     k_timer_start(&automouse_layer_timer, K_MSEC(CONFIG_PMW3610_AUTOMOUSE_TIMEOUT_MS), K_NO_WAIT);
@@ -578,18 +602,25 @@ static void deactivate_automouse_layer(struct k_timer *timer) {
 }
 
 static int pmw3610_layer_state_changed_listener(const zmk_event_t *eh) {
-    if (automouse_triggered) {
-        uint8_t highest_layer = zmk_keymap_highest_layer_active();
-        if (is_layer_ignored(highest_layer)) {
-            k_timer_stop(&automouse_layer_timer);
-            deactivate_automouse_layer(NULL);
-        }
+    // Immediately deactivate automouse if any ignored layer becomes active
+    if (is_any_ignored_layer_active() && automouse_triggered) {
+        k_timer_stop(&automouse_layer_timer);
+        deactivate_automouse_layer(NULL);
     }
+    return 0;
+}
+
+static int pmw3610_keycode_state_changed_listener(const zmk_event_t *eh) {
+    // Update timestamp on any keypress
+    last_keypress_time = k_uptime_get();
     return 0;
 }
 
 ZMK_LISTENER(pmw3610, pmw3610_layer_state_changed_listener);
 ZMK_SUBSCRIPTION(pmw3610, zmk_layer_state_changed);
+
+ZMK_LISTENER(pmw3610_keypress, pmw3610_keycode_state_changed_listener);
+ZMK_SUBSCRIPTION(pmw3610_keypress, zmk_keycode_state_changed);
 
 K_TIMER_DEFINE(automouse_layer_timer, deactivate_automouse_layer, NULL);
 #endif
