@@ -15,6 +15,7 @@
 #define SNI 7
 #define FUNC 8
 #define NUM_RU 9
+#define FUNC_RU 10
 
 &sl {
   release-after-ms = <2000>;
@@ -68,7 +69,7 @@
 
         tri_layer_ru {
             if-layers = <NAV NUM_RU>;
-            then-layer = <FUNC>;
+            then-layer = <FUNC_RU>;
         };
     };
 
@@ -174,6 +175,16 @@
                 &kp SEMI       &kp EXCL       &kp COLON      &kp EQUAL      &kp MINUS        &kp PLUS       &kp N4         &kp N5         &kp N6         &kp LS(FSLH)
                 &trans         &trans         &trans         &caps_word     &kp UNDER        &kp UNDER      &kp N1         &kp N2         &kp N3         &kp FSLH
                                               &trans         &kp LSHIFT     &trans           &trans         &kp SPACE
+            >;
+        };
+
+        Function_RU {
+            label = "Function RU";
+            bindings = <
+                &trans         &trans         &trans         &trans         &trans           &bt BT_SEL 0   &kp F7         &kp F8         &kp F9         &kp F10
+                &kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      &trans           &bt BT_SEL 1   &kp F4         &kp F5         &kp F6         &kp F11
+                &trans         &trans         &trans         &trans         &bt BT_CLR_ALL   &bt BT_CLR     &kp F1         &kp F2         &kp F3         &kp F12
+                                              &trans         &trans         &trans           &trans         &trans
             >;
         };
     };
