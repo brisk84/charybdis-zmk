@@ -6,7 +6,8 @@ zmk/
 zmk-pmw3610-driver/
 modules/
 tools/
-/zephyr/
+/zephyr/*
+!/zephyr/module.yml
 !custom-pmw3610-driver/
 bootloader/
 build/
