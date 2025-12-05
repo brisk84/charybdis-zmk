@@ -44,7 +44,7 @@
             <key code="7" output="j"/>
             <key code="8" output="v"/>
             <key code="9" output="d"/>
-            <key code="10" output=""/>
+            <key code="10" output="&#x00A7;"/>
             <key code="11" output="k"/>
             <key code="12" output="w"/>
             <key code="13" output="l"/>
@@ -69,7 +69,7 @@
             <key code="32" output="f"/>
             <key code="33" output="["/>
             <key code="34" output="o"/>
-            <key code="35" output=";"/>
+            <key code="35" output="'"/>
             <key code="36" output="&#x000D;"/>
             <key code="37" output="i"/>
             <key code="38" output="n"/>
@@ -150,6 +150,7 @@
             <key code="7" output="J"/>
             <key code="8" output="V"/>
             <key code="9" output="D"/>
+            <key code="10" output="&#x00B1;"/>
             <key code="11" output="K"/>
             <key code="12" output="W"/>
             <key code="13" output="L"/>
@@ -174,7 +175,7 @@
             <key code="32" output="F"/>
             <key code="33" output="{"/>
             <key code="34" output="O"/>
-            <key code="35" output=":"/>
+            <key code="35" output="&#x0022;"/>
             <key code="36" output="&#x000D;"/>
             <key code="37" output="I"/>
             <key code="38" output="N"/>
@@ -307,6 +308,7 @@
             <key code="7" output="J"/>
             <key code="8" output="V"/>
             <key code="9" output="D"/>
+            <key code="10" output="&#x00B1;"/>
             <key code="11" output="K"/>
             <key code="12" output="W"/>
             <key code="13" output="L"/>
@@ -375,6 +377,7 @@
             <key code="7" output="J"/>
             <key code="8" output="V"/>
             <key code="9" output="D"/>
+            <key code="10" output="&#x00B1;"/>
             <key code="11" output="K"/>
             <key code="12" output="W"/>
             <key code="13" output="L"/>
